@@ -1,0 +1,26 @@
+# Exclure les fichiers et répertoires de Terraform
+.terraform/
+.terraform.lock.hcl
+
+# Exclure les fichiers d'état de Terraform, qui contiennent des informations sensibles
+terraform.tfstate
+terraform.tfstate.backup
+
+# Exclure les fichiers de variables contenant des secrets ou des configurations spécifiques
+*.tfvars
+*.tfvars.json
+
+# Exclure les fichiers de plan générés par Terraform
+*.tfplan
+
+# Fichiers de sortie et journaux éventuels
+crash.log
+*.log
+
+# Fichiers spécifiques à l'éditeur ou au système
+.idea/
+*.swp
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
